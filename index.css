@@ -1,0 +1,302 @@
+:root {
+    --transition: all 300ms ease;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    outline: 0;
+    border: 0;
+    list-style: none;
+    text-decoration: none;
+    box-sizing: border-box;
+
+}
+
+html {
+    font-size: 15px;
+    scroll-behavior: smooth;
+
+}
+
+body {
+    background-color: white;
+    font-family: 'Montserrat', sans-serif;
+    color: grey;
+    max-width: 100vw;
+
+}
+
+h1,
+h2,
+h3,
+h4,
+h5 {
+    color: black;
+    line-height: 1.2;
+}
+
+h1 {
+    font-size: 3.8rem;
+}
+
+h2 {
+    font-size: 2.6rem;
+}
+
+h3 {
+    font-size: 1.6rem;
+}
+
+h4 {
+    font-size: 1.2rem;
+}
+
+h5 {
+    font-size: 0.86rem;
+}
+
+p {
+    line-height: 1.8;
+}
+
+.container {
+    width: 80%;
+    margin: 0 auto;
+}
+
+section {
+    padding: 10rem 0 7rem;
+    max-width: 100vw;
+    margin-bottom: 5rem;
+}
+
+img {
+    width: 100%;
+}
+
+.btn {
+    padding: 1.4rem 3.4rem;
+    font-size: 1.1rem;
+    color: black;
+    background-color: white;
+    display: inline-block;
+    margin: 2rem 0;
+    transition: all 300ms ease;
+}
+
+.btn:hover {
+    box-shadow: 0 2rem 2rem rgb(238, 4, 4);
+}
+
+.btn-primary {
+    background: orangered;
+    color: white;
+}
+
+nav {
+    width: 100%;
+    height: 5rem;
+    background: white;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    z-index: 2;
+    border-bottom: 1px solid lightgray;
+}
+
+nav .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%;
+
+}
+
+nav h3 {
+    color: rgb(206, 44, 22);
+}
+
+nav .container ul {
+    display: flex;
+    height: 100%;
+}
+
+nav .container ul li a {
+    height: 100%;
+    width: 7rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: black;
+    position: relative;
+    transition: var(--transition);
+}
+
+nav .container ul li a:hover {
+    color: orangered;
+}
+
+nav .container ul li a.active {
+    background: orange;
+    color: white;
+}
+
+section .landing {
+
+    display: grid;
+    place-items: center;
+    position: relative;
+    top: 2rem;
+    padding-bottom: 10rem;
+}
+
+section .landing .container {
+    display: grid;
+    grid-template-columns: 5rem auto 28rem;
+    gap: 2rem;
+
+}
+
+section .landing .socials {
+    display: flex;
+    flex-direction: column;
+    gap: 1.6rem;
+    margin-top: 5rem;
+
+}
+
+section .landing .socials a {
+    font-size: 1.1rem;
+    background: lightgray;
+    color: black;
+    padding: 0.3rem;
+    border-radius: 20%;
+    height: 2rem;
+    width: 2rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: var(--transition);
+
+}
+
+section .landing .socials a:hover {
+    background: yellow;
+    color: orangered;
+}
+
+section .landing .info h1 {
+    text-align: left;
+    margin: 0;
+}
+
+section .landing h3 {
+    margin: 2.4rem 0 1rem;
+}
+
+section .landing .info p {
+    width: 35rem;
+}
+
+section .landing .profile-area .outer-circle {
+    display: flex;
+    border: 1px solid rgb(180, 154, 154);
+    border-radius: 50%;
+    width: 300px;
+    height: 300px;
+}
+
+section .landing .profile-area .outer-circle .material-icons-sharp1 {
+    display: flex;
+    position: relative;
+    left: 45%;
+    bottom: 7px;
+
+}
+
+section .landing .profile-area .outer-circle .material-icons-sharp2 {
+    display: flex;
+    position: relative;
+    left: 91.5%;
+    top: 45%;
+
+}
+
+section .landing .profile-area .outer-circle .material-icons-sharp3 {
+    display: flex;
+    position: relative;
+    top: 97%;
+    left: 33.5%;
+}
+
+section .landing .profile-area .outer-circle .material-icons-sharp4 {
+    display: flex;
+    position: relative;
+    top: 43%;
+    left: -19%;
+
+
+}
+
+section .landing .inner-circle {
+    display: flex;
+    position: relative;
+    top: 30%;
+    left: 6%;
+
+
+}
+
+.sec2{
+    margin-top: 0%;
+    align-items: center;
+    text-align: center;
+    padding: 0px 0px 100px 0px;
+}
+
+.skills-section {
+    padding-top: 0%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 10px;
+}
+
+.skill-card {
+    width: 200px;
+    padding: 20px;
+    background-color: #f2f2f2;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.skill-image {
+    width: 100px;
+    height: 100px;
+    margin: 0 auto 10px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.skill-name {
+    font-size: 18px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.skill-description {
+    font-size: 14px;
+    color: #777;
+}
+
+
+
+
+
+
+
+
+
